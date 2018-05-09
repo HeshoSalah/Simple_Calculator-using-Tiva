@@ -1,0 +1,10 @@
+--cpu Cortex-M4.fp
+".\startup_tm4c123.o"
+".\keypad.o"
+".\lcd.o"
+".\main.o"
+".\inttochar.o"
+".\chartoint.o"
+--ro-base 0x00000000 --entry 0x00000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\calculator.map" -o .\calculator.axf
